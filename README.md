@@ -1,29 +1,20 @@
 # socialoutput-share-sam
 
-### test
-
-```
-npm test
-```
-
-### build
-
-```
-sam build
-```
-
-→ `.aws-sam` 配下にコードが生成される
-
 ### local 起動
 
+ターミナルを 2 つ開きます
+
 ```
-sam local start-api
+## 1st terminal
+npm run build
+## 2nd terminal
+npm run dev
 ```
 
 ### deploy
 
 ```
-sam deploy
+npm run deploy
 ```
 
 ## sam cli

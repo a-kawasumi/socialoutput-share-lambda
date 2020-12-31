@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "### test",
   "scripts": {
-    "build": "NODE_ENV=dev webpack --mode=development",
-    "dev": "npm run build && sam local start-api",
+    "build": "NODE_ENV=dev webpack --watch --mode=development",
+    "dev": "sam local start-api",
     "deploy": "NODE_ENV=prod webpack --mode=production && sam deploy"
   },
   "repository": {

@@ -1,2 +1,0 @@
-module.exports=(()=>{var r={785:(r,e)=>{let t;e.lambdaHandler=async(r,e)=>{try{t={statusCode:200,body:JSON.stringify({message:"this is sheet!"})}}catch(r){return console.log(r),r}return t}}},e={};return function t(s){if(e[s])return e[s].exports;var o=e[s]={exports:{}};return r[s](o,o.exports,t),o.exports}(785)})();
-//# sourceMappingURL=app.js.map

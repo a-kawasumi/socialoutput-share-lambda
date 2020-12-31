@@ -1,5 +1,5 @@
 {
-  "name": "socialoutput-share-lambda",
+  "name": "socialoutput-share-sam",
   "version": "1.0.0",
   "description": "### test",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a-kawasumi/socialoutput-share-lambda.git"
+    "url": "git+https://github.com/a-kawasumi/socialoutput-share-sam.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/a-kawasumi/socialoutput-share-lambda/issues"
+    "url": "https://github.com/a-kawasumi/socialoutput-share-sam/issues"
   },
-  "homepage": "https://github.com/a-kawasumi/socialoutput-share-lambda#readme",
+  "homepage": "https://github.com/a-kawasumi/socialoutput-share-sam#readme",
   "devDependencies": {
     "aws-sam-webpack-plugin": "^0.8.1",
     "ts-loader": "^8.0.13",

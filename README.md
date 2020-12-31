@@ -1,4 +1,4 @@
-# socialoutput-share-lambda
+# socialoutput-share-sam
 
 ### test
 

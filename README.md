@@ -1,4 +1,32 @@
-# sam-app
+# socialoutput-share-lambda
+
+### test
+
+```
+npm test
+```
+
+### build
+
+```
+sam build
+```
+
+→ `.aws-sam` 配下にコードが生成される
+
+### local 起動
+
+```
+sam local start-api
+```
+
+### deploy
+
+```
+sam deploy
+```
+
+## sam cli
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 

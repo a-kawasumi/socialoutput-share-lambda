@@ -1,9 +1,0 @@
-version = 0.1
-[default]
-[default.deploy]
-[default.deploy.parameters]
-stack_name = "a-kawasumi-sam-app"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1uvqyyc7b64w"
-s3_prefix = "a-kawasumi-sam-app"
-region = "us-east-1"
-capabilities = "CAPABILITY_IAM"

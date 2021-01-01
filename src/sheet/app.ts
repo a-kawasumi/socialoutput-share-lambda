@@ -16,21 +16,21 @@ let response;
  *
  */
 exports.lambdaHandler = async (event, context) => {
-    try {
-        const message = sheetController.connectionCheck()
+  try {
+    const message = sheetController.connectionCheck()
 
-        response = {
-            'statusCode': 200,
-            'body': JSON.stringify({
-                message: message,
-            })
-            // 'body': JSON.stringify(message)
-        }
-
-    } catch (err) {
-        console.log(err);
-        return err;
+    response = {
+        'statusCode': 200,
+        'body': JSON.stringify({
+            message: message,
+        })
+        // 'body': JSON.stringify(message)
     }
 
-    return response
+  } catch (err) {
+    console.log(err);
+    return err;
+  }
+
+  return response
 };

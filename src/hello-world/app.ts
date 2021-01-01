@@ -15,20 +15,20 @@ let response;
  *
  */
 exports.lambdaHandler = async (event, context) => {
-    const message: string = 'hello ts world'
-    try {
-        // const ret = await axios(url);
-        response = {
-            'statusCode': 200,
-            'body': JSON.stringify({
-                message: message,
-                // location: ret.data.trim()
-            })
-        }
-    } catch (err) {
-        console.log(err);
-        return err;
+  const message: string = 'hello ts world'
+  try {
+    // const ret = await axios(url);
+    response = {
+      'statusCode': 200,
+      'body': JSON.stringify({
+          message: message,
+          // location: ret.data.trim()
+      })
     }
+  } catch (err) {
+    console.log(err);
+    return err;
+  }
 
-    return response
+  return response
 };

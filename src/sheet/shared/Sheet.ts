@@ -10,7 +10,7 @@ export type RowType = {
 }
 
 export default class Sheet {
-  update = async(row: RowType) => {
+  update = async(row: RowType): Promise<string> => {
     try {
 
       const SPREADSHEET_ID = process.env.SPREADSHEET_ID || ''

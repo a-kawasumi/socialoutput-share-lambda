@@ -1,5 +1,8 @@
 // const axios = require('axios')
 // const url = 'http://checkip.amazonaws.com/';
+import SheetController from "./controller/SheetController"
+
+const sheetController = new SheetController()
 let response;
 
 /**
@@ -17,13 +20,18 @@ let response;
 exports.lambdaHandler = async (event, context) => {
     try {
         // const ret = await axios(url);
+        const sheet = sheetController.connectionCheck(event)
+        console.log('-----------')
+
         response = {
             'statusCode': 200,
-            'body': JSON.stringify({
-                message: 'this is sheet!',
-                // location: ret.data.trim()
-            })
+            // 'body': JSON.stringify({
+            //     message: sheet,
+            //     // location: ret.data.trim()
+            // })
+            'body': JSON.stringify(event.requestContext)
         }
+
     } catch (err) {
         console.log(err);
         return err;

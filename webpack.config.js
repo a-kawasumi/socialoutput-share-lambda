@@ -1,9 +1,10 @@
 const AwsSamPlugin = require("aws-sam-webpack-plugin");
 const awsSamPlugin = new AwsSamPlugin();
 
-console.log('hoge')
-console.log(__dirname)
-console.log(process.env.NODE_ENV)
+// webpackで環境変数使いたい時
+require('dotenv').config()
+// srcで環境変数使いたい時
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     // Loads the entry object from the AWS::Serverless::Function resources in your
@@ -48,6 +49,7 @@ module.exports = {
 
     // Add the AWS SAM Webpack plugin
     plugins: [
-      awsSamPlugin
+      awsSamPlugin,
+      new Dotenv()
     ]
 }

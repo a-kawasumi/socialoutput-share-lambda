@@ -1,14 +1,40 @@
 # socialoutput-share-sam
 
-### local 起動
+Slack #000_socialoutput_share に投稿された note の記事をスプレッドシートに書き込みます。
 
-ターミナルを 2 つ開きます
+SAM CLI を使って構築
+
+- [What is the AWS Serverless Application Model (AWS SAM)? - AWS Serverless Application Model](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
+
+* [Slack API: Applications | YUMEMI Slack](https://api.slack.com/apps/A019Y10204C)
+
+* [ゆめみ公式 note 紐づけ作業 - Google スプレッドシート](https://docs.google.com/spreadsheets/d/1jPA7EypwR8hNOUbFu5bnZQruYAQcgPYvFX3JbnPZqTg/edit#gid=1914935764)
+
+## TypeScript の support
+
+現在（2021.01）Lambda は TypeScript を support していないため webpack を使っています。
+
+build は公式の `sam build` を使わず `npm run build` を使用します。
+
+## Usage
+
+### env ファイル
 
 ```
-## 1st terminal
+cp .env.example .env
+```
+
+### local 起動
+
+ターミナルを 2 つ開いて下記を実行
+
+```
+sam local start-api
+
+```
+
+```
 npm run build
-## 2nd terminal
-npm run dev
 ```
 
 ### deploy

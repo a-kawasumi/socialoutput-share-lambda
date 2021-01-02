@@ -19,6 +19,7 @@
   "homepage": "https://github.com/a-kawasumi/socialoutput-share-sam#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.68",
+    "@types/google-spreadsheet": "^3.0.2",
     "aws-sam-webpack-plugin": "^0.8.1",
     "dotenv-webpack": "^6.0.0",
     "ts-loader": "^8.0.13",

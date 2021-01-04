@@ -33,11 +33,11 @@ cp src/sheet/credentials.example.json src/sheet/credentials.json
 sam local start-api
 ```
 
-http://127.0.0.1:3000/hello で表示されれば接続成功
-
 ```
 npm run build
 ```
+
+http://127.0.0.1:3000/hello で表示されれば接続成功
 
 ### deploy
 

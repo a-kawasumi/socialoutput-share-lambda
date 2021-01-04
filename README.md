@@ -18,10 +18,11 @@ build は公式の `sam build` を使わず `npm run build` を使用します�
 
 ## Usage
 
-### env ファイル
+### 秘匿ファイル
 
 ```
 cp .env.example .env
+cp src/sheet/credentials.example.json src/sheet/credentials.json
 ```
 
 ### local 起動
@@ -30,8 +31,9 @@ cp .env.example .env
 
 ```
 sam local start-api
-
 ```
+
+http://127.0.0.1:3000/hello で表示されれば接続成功
 
 ```
 npm run build
